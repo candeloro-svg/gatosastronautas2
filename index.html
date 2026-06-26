@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos Astronautas - Exploração Espacial Felina</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">🚀 Gatos Astronautas</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#exploracao">Exploração</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero com p5.js -->
+        <section id="inicio" class="hero">
+            <div id="p5-container-hero"></div>
+            <div class="hero-content">
+                <h1>Bem-vindo ao Universo dos Gatos Astronautas</h1>
+                <p>Explorando galáxias, um miau de cada vez</p>
+                <button class="btn-primary" onclick="scrollToSection('exploracao')">Começar Jornada</button>
+            </div>
+        </section>
+
+        <!-- Seção de Exploração -->
+        <section id="exploracao" class="exploracao">
+            <div class="container">
+                <h2>Missões Espaciais</h2>
+                <div class="grid-missoes">
+                    <div class="card-missao">
+                        <div class="icon">🌙</div>
+                        <h3>Lua Felina</h3>
+                        <p>Primeira base lunar construída inteiramente por gatos astronautas.</p>
+                    </div>
+                    <div class="card-missao">
+                        <div class="icon">🪐</div>
+                        <h3>Cinturão de Asteroides</h3>
+                        <p>Exploração e mapeamento de asteroides no cinturão entre Marte e Júpiter.</p>
+                    </div>
+                    <div class="card-missao">
+                        <div class="icon">☄️</div>
+                        <h3>Cometas Cósmicos</h3>
+                        <p>Rastreamento de cometas e coleta de amostras de gelo intergaláctico.</p>
+                    </div>
+                    <div class="card-missao">
+                        <div class="icon">🌌</div>
+                        <h3>Galáxias Distantes</h3>
+                        <p>Viagens para galáxias vizinhas em busca de novos mundos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria com p5.js -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <h2>Galeria Interativa</h2>
+                <p class="subtitle">Clique na canvas para interagir com os gatos astronautas</p>
+                <div id="p5-container-galeria"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Curiosidades -->
+        <section id="curiosidades" class="curiosidades">
+            <div class="container">
+                <h2>Fatos Fascinantes</h2>
+                <div class="grid-curiosidades">
+                    <div class="curiosidade-item">
+                        <h3>🐱 Reflexos Felinos</h3>
+                        <p>Os gatos astronautas possuem reflexos 3x mais rápidos que humanos, ideais para manobras espaciais.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <h3>👁️ Visão Noturna</h3>
+                        <p>Conseguem navegar em ambientes com pouca luz, perfeito para exploração de crateras lunares.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <h3>⚖️ Adaptação Gravitacional</h3>
+                        <p>Seu centro de gravidade flexível permite adaptação rápida em diferentes gravidades planetárias.</p>
+                    </div>
+                    <div class="curiosidade-item">
+                        <h3>🧠 Inteligência Estratégica</h3>
+                        <p>Excelente resolução de problemas e tomada de decisão em situações críticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form class="formulario-contato" onsubmit="handleFormSubmit(event)">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gatos Astronautas. Explorando o universo felino. 🚀🐱</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="sketch-hero.js"></script>
+    <script src="sketch-galeria.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
